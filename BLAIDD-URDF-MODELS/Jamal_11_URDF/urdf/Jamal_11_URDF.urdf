@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Jamal_11_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0147087855029077 0.00572960312645314 -0.000130704777718747"
+        rpy="0 0 0" />
+      <mass
+        value="1.01498313418644" />
+      <inertia
+        ixx="0.00177854693144854"
+        ixy="-0.000210112333583515"
+        ixz="3.50408442592368E-08"
+        iyy="0.00798658327548668"
+        iyz="-5.53644890861778E-09"
+        izz="0.0065407260271217" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.0442455478901672 -0.00244919725036426 -1.41780174668697E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0641819120792564" />
+      <inertia
+        ixx="1.13780826144667E-05"
+        ixy="-7.79794455740354E-08"
+        ixz="-1.69737864997123E-11"
+        iyy="2.13895064899051E-05"
+        iyz="-1.64888726990257E-11"
+        izz="2.37008421305494E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="continuous">
+    <origin
+      xyz="-0.0739 -0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.785"
+      upper="0.785"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.0001443 -0.032914 -0.0080363"
+        rpy="0 0 0" />
+      <mass
+        value="0.05623" />
+      <inertia
+        ixx="3.8125E-05"
+        ixy="-1.9726E-11"
+        ixz="-1.8161E-11"
+        iyy="3.5943E-05"
+        iyz="-1.8092E-07"
+        izz="6.7549E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="continuous">
+    <origin
+      xyz="-0.0615 -0.0269 0"
+      rpy="0 -0.5236 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_9">
+    <inertial>
+      <origin
+        xyz="-0.00638795083063136 -0.00750000000000009 -0.0888795675886375"
+        rpy="0 0 0" />
+      <mass
+        value="0.015225991922493" />
+      <inertia
+        ixx="1.80997696411931E-05"
+        ixy="-2.81885592407866E-21"
+        ixz="-1.64216623015799E-06"
+        iyy="1.86905765962856E-05"
+        iyz="-1.36113775741341E-20"
+        izz="6.43617139572536E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_9"
+    type="continuous">
+    <origin
+      xyz="0 -0.004 -0.1143"
+      rpy="0 1.2341 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_9" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="-0.0442455478901672 0.00244919698064999 1.44307169244211E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0641819120792564" />
+      <inertia
+        ixx="1.13780826144667E-05"
+        ixy="7.79789486732497E-08"
+        ixz="1.74320652288723E-11"
+        iyy="2.13895064899051E-05"
+        iyz="-1.64888726993829E-11"
+        izz="2.37008421305494E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="continuous">
+    <origin
+      xyz="-0.0739 0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.785"
+      upper="0.785"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="-0.000144311272056344 0.0329144607872598 -0.00803630182657724"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562301441472765" />
+      <inertia
+        ixx="3.81253016394536E-05"
+        ixy="-1.65109833126889E-11"
+        ixz="1.83600176447832E-11"
+        iyy="3.59431069065172E-05"
+        iyz="1.80943321147875E-07"
+        izz="6.7548717972895E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="continuous">
+    <origin
+      xyz="-0.0615 0.0269 0"
+      rpy="0 -0.5236 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_10">
+    <inertial>
+      <origin
+        xyz="-0.00638795083063163 0.00749999999999994 -0.0888795675886378"
+        rpy="0 0 0" />
+      <mass
+        value="0.0152259919224931" />
+      <inertia
+        ixx="1.80997696411931E-05"
+        ixy="-8.54942592679236E-21"
+        ixz="-1.64216623015801E-06"
+        iyy="1.86905765962856E-05"
+        iyz="-2.67673671568176E-20"
+        izz="6.43617139572537E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_10"
+    type="continuous">
+    <origin
+      xyz="0 0.00400000000000013 -0.1143"
+      rpy="0 1.23414620043141 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="link_10" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0441274145880996 -0.00244919698064999 -1.41780173840781E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0641819120792564" />
+      <inertia
+        ixx="1.13780826144667E-05"
+        ixy="-7.79794455740208E-08"
+        ixz="-1.74320652226959E-11"
+        iyy="2.13895064899051E-05"
+        iyz="-1.6485286490832E-11"
+        izz="2.37008421305494E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="continuous">
+    <origin
+      xyz="0.0739 -0.07 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-0.785"
+      upper="0.785"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_7">
+    <inertial>
+      <origin
+        xyz="0.000144302006960098 -0.0329144622785367 -0.0080362899486495"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562301381079356" />
+      <inertia
+        ixx="3.81253009923937E-05"
+        ixy="-1.96613648456006E-11"
+        ixz="-1.8184230622412E-11"
+        iyy="3.59431064760427E-05"
+        iyz="-1.80921414758251E-07"
+        izz="6.75487140501562E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="continuous">
+    <origin
+      xyz="0.0415 -0.0269000000000001 0"
+      rpy="0 -0.523598775598261 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_7" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_11">
+    <inertial>
+      <origin
+        xyz="-0.00638795083063129 -0.00750000000000006 -0.0888795675886375"
+        rpy="0 0 0" />
+      <mass
+        value="0.015225991922493" />
+      <inertia
+        ixx="1.80997696411931E-05"
+        ixy="-2.31476982390325E-21"
+        ixz="-1.64216623015798E-06"
+        iyy="1.86905765962856E-05"
+        iyz="-1.74986627533105E-20"
+        izz="6.43617139572533E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_11"
+    type="continuous">
+    <origin
+      xyz="0 -0.00399999999999992 -0.1143"
+      rpy="0 1.23414620043141 0" />
+    <parent
+      link="link_7" />
+    <child
+      link="link_11" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="continuous">
+    <origin
+      xyz="0.0739 0.0699999999999999 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-0.785"
+      upper="0.785"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_8">
+    <inertial>
+      <origin
+        xyz="-0.000144310528868957 0.0329144621275925 -0.00803630486551648"
+        rpy="0 0 0" />
+      <mass
+        value="0.0562301389880002" />
+      <inertia
+        ixx="3.81253013662356E-05"
+        ixy="-1.63959792248844E-11"
+        ixz="1.83569012232642E-11"
+        iyy="3.59431068995489E-05"
+        iyz="1.80943307837833E-07"
+        izz="6.75487151041171E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_8"
+    type="continuous">
+    <origin
+      xyz="0.0415 0.0269000000000001 0"
+      rpy="0 -0.523598775598274 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_8" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+  <link
+    name="link_12">
+    <inertial>
+      <origin
+        xyz="-0.00638795083063148 0.00749999999999998 -0.0888795675886379"
+        rpy="0 0 0" />
+      <mass
+        value="0.015225991922493" />
+      <inertia
+        ixx="1.80997696411931E-05"
+        ixy="-2.8154718912583E-21"
+        ixz="-1.64216623015801E-06"
+        iyy="1.86905765962856E-05"
+        iyz="-1.65269286746792E-20"
+        izz="6.43617139572538E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jamal_11_URDF/meshes/link_12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_12"
+    type="continuous">
+    <origin
+      xyz="0 0.00399999999999995 -0.1143"
+      rpy="0 1.23414620043142 0" />
+    <parent
+      link="link_8" />
+    <child
+      link="link_12" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="4"
+      velocity="1" />
+  </joint>
+</robot>
